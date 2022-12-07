@@ -44,14 +44,13 @@ function App() {
         </Grid>
         {pokemons.map(pokemon => 
             <Grid item xs={6} lg={2}>
-                <Card key={pokemon.data.name}  onClick={() => {abilityPokemon(pokemon); setPokemon(pokemon)}} sx={{ maxWidth: 345 }}>
+                <Card key={pokemon.data.name} className='cardPokemon'  onClick={() => {abilityPokemon(pokemon); setPokemon(pokemon)}} sx={{ maxWidth: 345 }}>
                 <CardMedia
                     component="img"
                     height="200"
                     image={pokemon.data.sprites.front_default}
                     alt={pokemon.data.name}
                 />
-                {console.log(pokemon)}
                 <CardContent>
                     <Typography gutterBottom variant="h6" align='center' component="div">
                     {pokemon.data.name.toUpperCase()}
