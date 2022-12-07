@@ -1,6 +1,7 @@
 import { AppBar, Box, Card, CardContent, CardMedia, Dialog, DialogContent, DialogTitle, Grid, Toolbar, Typography } from '@mui/material'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import pokemonLogo from './logo/pokemon-logo.png'
 import './App.css'
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
             <AppBar position='static' sx={{backgroundColor:'black'}}>
                 <Toolbar>
                     <Box display='flex' justifyContent='center' width='100%'>
-                    <Box component='img' src='/logo/pokemon-logo.png' height='4em'/>
+                    <Box component='img' src={pokemonLogo} height='4em'/>
                     </Box>
                 </Toolbar>
             </AppBar>
