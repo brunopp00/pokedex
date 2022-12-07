@@ -1,7 +1,7 @@
 {
   "name": "github-page",
   "version": "0.1.0",
-  "homepage": "github-page/",
+  "homepage": "pokedex/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
