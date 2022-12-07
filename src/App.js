@@ -42,7 +42,7 @@ function App() {
             </AppBar>
         </Grid>
         {pokemons.map(pokemon => 
-            <Grid item xs={2}>
+            <Grid item xs={6} lg={2}>
                 <Card key={pokemon.data.name}  onClick={() => {abilityPokemon(pokemon); setPokemon(pokemon)}} sx={{ maxWidth: 345 }}>
                 <CardMedia
                     component="img"
